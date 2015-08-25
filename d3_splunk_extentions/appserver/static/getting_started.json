@@ -3,7 +3,7 @@
     "id": "custom_trend_chart",
     "title": "Trend chart",
     "short-description": "Trend chart which allows for event markers",
-    "category": "Searching",
+    "category": "D3 Charts",
     "tags": [
       "new"
     ],
@@ -15,7 +15,7 @@
     "id": "custom_waterfall_chart",
     "title": "Waterfall Chart",
     "short-description": "Waterfall chart usefull for displaying positive vs negative events",
-    "category": "Searching",
+    "category": "D3 Charts",
     "tags": [
       "new"
     ],
@@ -26,8 +26,8 @@
   {
     "id": "custom_radar_chart",
     "title": "Radar/ Spider Chart",
-    "short-description": "Its a sider chart!!!",
-    "category": "Searching",
+    "short-description": "Creating Dashboards and how to search them",
+    "category": "D3 Charts",
     "tags": [
       "new"
     ],
