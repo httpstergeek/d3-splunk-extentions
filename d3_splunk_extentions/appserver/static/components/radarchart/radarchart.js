@@ -43,7 +43,6 @@ define(function(require, exports, module) {
       return formattedData; // this is passed into updateView as 'data'
     },
     updateView: function(viz, data) {
-      console.log('hello');
       this.$el.html("");
       var id = this.id;
       var parent = $("#"+id).parent();
@@ -62,7 +61,6 @@ define(function(require, exports, module) {
       var d = [];
 
       function radarchart(data, id, parentid, options){
-        console.log(id,parentid)
         var cfg = {
           radius: 5,
           w: 400,
