@@ -33,6 +33,7 @@
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
+    background-color: white;
 }
 
 .example .content {
@@ -94,9 +95,14 @@ ul.nav.nav-list > li:last-child > a {
     background-color: #ffffff;
 }
 
+.nav-list>.active>a{
+    background-image: none;
+    background-color: #FF8000;
+}
+
 .nav-list>.active>a:hover{
     background-image: none;
-    background-color: #468CBF;
+    background-color: #FE9A2E;
 }
 
 .nav-bar-slide {
@@ -157,3 +163,4 @@ h2 {
 .empty-dashboard {
     display: none;
 }
+
