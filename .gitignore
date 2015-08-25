@@ -220,3 +220,4 @@ target/
 
 # Splunk
 *local.meta
+*local/
