@@ -8,7 +8,7 @@
     <panel>
       <title>Bytes per Page with Releases over Time</title>
       <html>
-            <div id="custom" class="splunk-view" data-require="app/simple_xml_examples/components/trendchart/trendchart" data-options="{                         &quot;managerid&quot;: &quot;trend_search&quot;, &quot;height&quot;:&quot;600&quot;, &quot;marker_title&quot;:&quot;label&quot;, &quot;marker_value&quot;:&quot;value&quot;, &quot;ylabel&quot;:&quot;bytes&quot;}">
+            <div id="custom" class="splunk-view" data-require="app/d3_splunk_extentions/components/trendchart/trendchart" data-options="{                         &quot;managerid&quot;: &quot;trend_search&quot;, &quot;height&quot;:&quot;600&quot;, &quot;marker_title&quot;:&quot;label&quot;, &quot;marker_value&quot;:&quot;value&quot;, &quot;ylabel&quot;:&quot;bytes&quot;}">
             </div>
 
         </html>
