@@ -1,0 +1,11 @@
+component,count,percent
+Metrics,74761,"89.541638"
+ExecProcessor,"-9047","1.719905"
+TailingProcessor,669,"0.801265"
+LicenseUsage,648,"0.776113"
+WatchedFile,641,"0.767729"
+root,470,"0.562921"
+IndexProcessor,"-17047","0.482675"
+databasePartitionPolicy,348,"0.416801"
+TcpOutputProc,333,"0.398836"
+PubSubSvr,228,"0.273077"
