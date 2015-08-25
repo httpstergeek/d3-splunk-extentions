@@ -1,0 +1,10 @@
+{
+  "name": "trendchart",
+  "version": "1.0.0",
+  "main": "trendchart.js",
+  "ignore": [],
+  "dependencies": {
+    "d3": "3.3.x"
+  },
+  "devDependencies": {}
+}

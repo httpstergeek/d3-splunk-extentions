@@ -1,0 +1,34 @@
+.bar.total rect {
+    fill: steelblue;
+}
+
+.bar.positive rect {
+    fill: darkolivegreen;
+}
+.bar.negative rect {
+    fill: crimson;
+}
+
+.bar line.connector {
+    stroke: grey;
+    stroke-dasharray: 3;
+}
+
+.bar text {
+    fill: white;
+    font: 12px sans-serif;
+    text-anchor: middle;
+}
+
+.axis text {
+    font: 10px sans-serif;
+}
+
+text.barlabel {
+    fill: black;
+}
+
+.domain text {
+    color: black;
+    font-weight: bold;
+}
