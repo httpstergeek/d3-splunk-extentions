@@ -221,3 +221,6 @@ target/
 # Splunk
 *local.meta
 *local/
+*.spl
+*.tar
+*.r.gz
