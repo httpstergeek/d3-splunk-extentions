@@ -12,6 +12,12 @@ define(function(require, exports, module) {
     output_mode: "json",
     initialize: function() {
       SimpleSplunkView.prototype.initialize.apply(this, arguments);
+
+      // Set up resize callback.
+      $(window).resize(_.debounce(_.bind(this._handleResize, this), 20));
+    },
+    _handleResize: function() {
+      this.render();
     },
     createView: function() {
       return true;
