@@ -26,7 +26,19 @@
   {
     "id": "custom_radar_chart",
     "title": "Radar/ Spider Chart",
-    "short-description": "Creating Dashboards and how to search them",
+    "short-description": "Radar chart to show relationships",
+    "category": "D3 Charts",
+    "tags": [
+      "new"
+    ],
+    "versions": [
+      "6.2"
+    ]
+  },
+  {
+    "id": "custom_showreel_chart",
+    "title": "Showreel Chart",
+    "short-description": "Animated chart",
     "category": "D3 Charts",
     "tags": [
       "new"
