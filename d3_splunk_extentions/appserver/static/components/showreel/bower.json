@@ -1,0 +1,10 @@
+{
+  "name": "showreel",
+  "version": "1.0.0",
+  "main": "showreel.js",
+  "ignore": [],
+  "dependencies": {
+    "d3": "3.3.x"
+  },
+  "devDependencies": {}
+}
