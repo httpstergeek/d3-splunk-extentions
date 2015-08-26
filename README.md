@@ -10,7 +10,6 @@ Toolkit.
 * Operating System: Windows, Linux, or Mac OS X.
 * Web browsers: Latest versions of Chrome, Safari, or Firefox, Internet Explorer
   9 or later. 
-* The Splunk Web Framework: The Web Framework is included in Splunk Enterprise 6
 
 #### Installing 
 The D3 Splunk Extentions is built as a Splunk App, enabling interactive
