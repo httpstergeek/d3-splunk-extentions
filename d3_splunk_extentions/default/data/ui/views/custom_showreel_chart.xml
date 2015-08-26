@@ -1,0 +1,17 @@
+<dashboard showsource="true" script="autodiscover.js">
+  <label>Showreel Chart</label>
+  <search id="showreel_search">
+    <query>
+      index=* | bucket _time span=1h | stats count by _time host
+    </query>
+  </search>
+  <row>
+    <panel>
+      <title>Total after Negative values</title>
+      <html>
+        <div id="showreel" class="splunk-view" data-require="app/d3_splunk_extentions/components/showreel/showreel" data-options="{                         &quot;managerid&quot;: &quot;showreel_search&quot;, &quot;height&quot;:&quot;600&quot;, &quot;label&quot;:&quot;component&quot;, &quot;value&quot;:&quot;count&quot;, &quot;ylabel&quot;:&quot;bytes&quot;}">
+        </div>
+      </html>
+    </panel>
+  </row>
+</dashboard>
