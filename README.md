@@ -2,8 +2,7 @@
 Contains d3 visualization extensions for Splunk
 
 ### Getting Started
-This section provides information about installing and using the Web Framework
-Toolkit.
+This section provides information about installing and using the D3 Splunk Extensions.
 
 #### Requirements
 
