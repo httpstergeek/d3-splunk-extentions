@@ -8,7 +8,7 @@
   <row>
     <panel>
       <html>
-        <div id="radarchart" class="splunk-view" data-require="app/simple_xml_examples/components/radarchart/radarchart" data-options="{                         &quot;managerid&quot;: &quot;radarchartsearch&quot;, &quot;height&quot;:&quot;500&quot;, &quot;width&quot;:&quot;500&quot;, &quot;axis&quot;:&quot;department&quot;, &quot;opacityArea&quot;:&quot;0.5&quot;, &quot;levels&quot;:&quot;6&quot;, &quot;legendTitle&quot;:&quot;Count of actions used by departments&quot;}">
+        <div id="radarchart" class="splunk-view" data-require="app/d3_splunk_extentions/components/radarchart/radarchart" data-options="{                         &quot;managerid&quot;: &quot;radarchartsearch&quot;, &quot;height&quot;:&quot;500&quot;, &quot;width&quot;:&quot;500&quot;, &quot;axis&quot;:&quot;department&quot;, &quot;opacityArea&quot;:&quot;0.5&quot;, &quot;levels&quot;:&quot;6&quot;, &quot;legendTitle&quot;:&quot;Count of actions used by departments&quot;}">
         </div>
       </html>
     </panel>
