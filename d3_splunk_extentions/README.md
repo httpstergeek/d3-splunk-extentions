@@ -45,3 +45,8 @@ Bug Report/ Feature Request
 [d3-splunk-extentions] 
 
 [d3-splunk-extentions]:https://github.com/httpstergeek/d3-splunk-extentions
+
+Backlog
+---------
+
+Add showreel visulization 
