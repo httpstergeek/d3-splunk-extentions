@@ -24,7 +24,7 @@ within Splunk Web.
 
 1. [Download and unzip the D3 Splunk Extentions](https://github.com/httpstergeek/d3-splunk-extnetions/archive/master.zip) 
 or clone the repository from [GitHub](https://github.com/httpstergeek). 
-2. Copy the `/splunk_wftoolkit` subdirectory into `$SPLUNK_HOME/etc/apps/`. 
+2. Copy the `/d3_splunk_extentions` subdirectory into `$SPLUNK_HOME/etc/apps/`. 
 3. Restart Splunk.
 4. In Splunk Web, navigate to the D3 Splunk Extentions
 
