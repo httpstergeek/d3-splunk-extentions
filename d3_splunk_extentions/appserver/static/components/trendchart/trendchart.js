@@ -14,7 +14,11 @@ define(function(require, exports, module) {
       "data": "preview",
       "width": 960,
       "height": null,
-      "searchid": null
+      "searchid": null,
+      "marker_label": null,
+      "marker_value": null,
+      "ylabel": null
+
     },
 
     output_mode: "json",

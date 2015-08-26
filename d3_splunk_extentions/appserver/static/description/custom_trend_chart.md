@@ -18,6 +18,21 @@ app:
         following example
 - Also make sure to reference the correct path to your custom viz source
     files (`data-require`)
++ required field names pct05 and pct95 for upper band, pct25 and pct75 for mid band, pct50 as median for line.
++ Configurable data-options:
+    - `marker_label` is the splunk field which contains the marker label/ Title. 
+    - `marker_value` is the Splunk field which contains numeric value. This value determines marker size.
+    - `ylabel` controls the Y axis label.
+    - `height` controls the panel height.
+    
+Example Searches using subsearch:
 
-For additional information on using the splunrchmanager, please
++ The main search fetches stats for response\_time by day with a subsearch to find changes affecting those servers.  The result is the data is joined on day as an overlay.
+    - index=access host=webservers uri\_root="/home" | bucket \_time span=1d | stats  perc05(response\_time) as pct05 , perc25(response\_time) as pct25, perc50(response\_time) as pct50 ,perc75(response\_time) as pct75, perc95(esponse\_time) as pct95 by \_time | append \[search index=changes category=prod systems=webservers| bucket \_time span=1d | stats  count as value by \_time \] 
+
+
+    
+Note: Panel width is auto scaled by from width of parent panel and will resize when dragged to new row
+
+For additional information on using the splunksearchmanager, please
 refer to the Splunk Web Framework Reference Manual
