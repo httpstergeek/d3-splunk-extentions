@@ -24,6 +24,7 @@ app:
     - `marker_value` is the Splunk field which contains numeric value. This value determines marker size.
     - `ylabel` controls the Y axis label.
     - `height` controls the panel height.
++ Tokens on onclick event for markers `marker_date`, `marker_label`, and `marker_value`. Can be use to power other panel or search.
     
 Example Searches using subsearch:
 
