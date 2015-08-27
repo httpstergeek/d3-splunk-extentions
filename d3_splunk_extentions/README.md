@@ -48,5 +48,3 @@ Bug Report/ Feature Request
 
 Backlog
 ---------
-
-Add showreel visulization 
