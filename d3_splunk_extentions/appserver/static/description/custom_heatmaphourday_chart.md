@@ -30,12 +30,12 @@ app:
 Example Searches :
 
 + The following is an example of using Service Now data.
-    - eventtype=snow_incident earliest=-30d@d
-            | dedup sys_id sys_created_on
-            | timechart span=1h count as value
-            | eval time=tonumber(strftime(_time,"%H"))
-            | eval day=tonumber(strftime(_time,"%w"))
-            | fields - _time | stats sum(value) as value by time day
+    - eventtype=snow\_incident earliest=-30d@d
+     <br />       | dedup sys\_id sys\_created_on
+     <br />       | timechart span=1h count as value
+     <br />       | eval time=tonumber(strftime(\_time,"%H"))
+     <br />       | eval day=tonumber(strftime(\_time,"%w"))
+     <br />       | fields - \_time | stats sum(value) as value by time day
 
 
     
