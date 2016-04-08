@@ -1,0 +1,10 @@
+{
+    "name": "heatmap_dayhour",
+    "version": "1.0.0",
+    "main": "heatmap_dayhour.js",
+    "ignore": [],
+    "dependencies": {
+        "d3": "3.3.x"
+    },
+    "devDependencies": {}
+}
