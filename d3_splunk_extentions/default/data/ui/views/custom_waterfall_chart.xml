@@ -9,7 +9,15 @@
         <panel>
             <title>Total after Negative values</title>
             <html>
-                <div id="water" class="splunk-view" data-require="app/simple_xml_examples/components/waterfall/waterfall" data-options="{                         &quot;managerid&quot;: &quot;waterfall_search&quot;, &quot;height&quot;:&quot;600&quot;, &quot;label&quot;:&quot;component&quot;, &quot;value&quot;:&quot;count&quot;, &quot;ylabel&quot;:&quot;bytes&quot;}">
+                <div id="water"
+                     class="splunk-view"
+                     data-require="app/d3_splunk_extentions/components/waterfall/waterfall"
+                     data-options="{
+                       &quot;managerid&quot;: &quot;waterfall_search&quot;,
+                       &quot;height&quot;:&quot;600&quot;,
+                       &quot;label&quot;:&quot;component&quot;,
+                       &quot;value&quot;:&quot;count&quot;,
+                       &quot;ylabel&quot;:&quot;bytes&quot;}">
                 </div>
             </html>
         </panel>
