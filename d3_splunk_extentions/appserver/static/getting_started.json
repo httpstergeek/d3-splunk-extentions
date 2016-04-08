@@ -46,5 +46,17 @@
     "versions": [
       "6.2"
     ]
+  },
+  {
+    "id": "custom_heatmaphourday_chart",
+    "title": "Heatmap hour day Chart",
+    "short-description": "Hour day heat map",
+    "category": "D3 Charts",
+    "tags": [
+      "new"
+    ],
+    "versions": [
+      "6.4"
+    ]
   }
 ]
