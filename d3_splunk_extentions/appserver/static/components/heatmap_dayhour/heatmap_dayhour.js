@@ -105,16 +105,32 @@ define(function(require, exports, module) {
         .style("text-anchor", "middle")
         .attr("transform", "translate(" + gridSize / 2 + ", -6)")
         .attr("class", function(d, i) { return ((i >= 7 && i <= 16) ? "timeLabel mono axis axis-worktime" : "timeLabel mono axis"); });
-
+      
       var tip = d3.select("body")
-        .append("div")  // declare the tooltip div
-        .attr("class", "tooltip")           // apply the 'tooltip' class
-        .style("background-color", "white")
-        .style("font-weight", "bold")
-        .style("vertical-align", "middle")
-        .style("text-align", "center")
+          .append("div")  // declare the tooltip div
+          .attr("class", "tooltip")           // apply the 'tooltip' class
+          .style("background-color", "white")
+          .style("border", "solid")
+          .style("border-width", "2px")
+          .style("border-radius", "5px")
+          .style("padding", "5px")
+  
+          .style("opacity", 0);
+  
+        var mouseover = function(d) {
+            tip.style("opacity", 1)
+          }
+        
+        var mousemove = function(d) {
+        tip
+            .html("<div>"+tiplabel+"</div>"+"<div>"+d.value+"</div>")
+            .style("left", (d3.mouse(this)[0]+70) + "px")
+            .style("top", (d3.mouse(this)[1]+170) + "px")
+        }
 
-        .style("opacity", 0);
+        var mouseleave = function(d) {
+            tip.style("opacity", 0)
+        }
 
 
       var heatmapChart = function(data) {
@@ -144,18 +160,9 @@ define(function(require, exports, module) {
           .attr("width", gridSize)
           .attr("height", gridSize)
           .style("fill", colors[0])
-          .on("mouseover", function (d) {
-            tip.transition()
-              .duration(500)
-              .style("opacity", 0);
-            tip.transition()
-              .duration(200)
-              .style("opacity", .9);
-            tip.html("<div>"+tiplabel+"</div>"+"<div>"+d.value+"</div>")
-              .style("left", (d3.event.pageX) + "px")
-              .style("top", (d3.event.pageY - 28) + "px")
-            // .enter().append("div")
-          });
+          .on("mouseover", mouseover)
+          .on("mousemove",mousemove)
+          .on("mouseleave",mouseleave)
 
         cards.transition().duration(1000)
           .style("fill", function(d) { return colorScale(d.value); });
